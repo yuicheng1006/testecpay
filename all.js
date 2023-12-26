@@ -1,4 +1,5 @@
 const domain=location.href;
+console.log('domain',domain);
 
 const createHiddenInput = (form, name, value) => {
   const hiddenField = document.createElement('input');
@@ -21,3 +22,5 @@ const getMapHandler = () => {
     document.body.appendChild(form);
     form.submit();
   };
+
+document.querySelector('button').addEventListener('click',getMapHandler)
