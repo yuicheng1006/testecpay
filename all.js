@@ -19,11 +19,6 @@ btn.addEventListener('click', async () => {
 
   xhr.open('POST', 'https://logistics-stage.ecpay.com.tw/Express/map');
   xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-  // WARNING: Cookies will be stripped away by the browser before sending the request.
-  xhr.setRequestHeader(
-    'Cookie',
-    'MapInfo=MerchantID=2000132&MerchantTradeNo=ECPay&LogisticsType=CVS&LogisticsSubType=UNIMART&IsCollection=Y&ServerReplyURL=https%3a%2f%2fyuicheng1006.github.io%2ftestecpay%2f&CallBackFunction=&IsGet=&Device=0',
-  );
 
   xhr.send(data);
 });
